@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script async defer src="/scripts/library.js"></script>
+  </head>
+  <body>
+    <nav>
+        <h1>E-Book.com</h1>
+    </nav>
+    <section id="description">
+      <p>Welcome to E-Library.. a place for all the book worms.<br>
+      Discover new books and also upload your own !</p>
+      <button id="addBook"> + Add book</button>
+    </section>
+    <section>
+      <div id="book-cont" class="hidden"></div>
+    </section>
+      
+    
+    <section id="modal">
+        <form id="book-form">
+          <span class="close" id="xbtn">&times;</span>
+          <input type="text" name="title" id="title" placeholder="Title..">
+          <span class="warning">This book already exists in your library</span>
+          <input type="text" name="author" id="author" placeholder="Author..">
+          <input type="number" name="number" id="pages" placeholder="Pages..">
+          <label><input type="checkbox" id="read" name="read">Already read</label>
+          <button type="submit">Submit</button>
+        </form>
+    </section>
+  </body>
+</html>
